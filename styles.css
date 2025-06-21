@@ -4,13 +4,13 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f0f0;
+  background-color: #0d0113;
 }
 .calculator {
-  border: 1px solid #ccc;
+  border: 1px solid #070000;
   border-radius: 10px;
   padding: 1rem;
-  background: white;
+  background: rgba(158, 120, 196, 0.186);
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 .display {
@@ -22,10 +22,41 @@ body {
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 0.5rem;
+  gap: 1rem;
 }
 button {
   padding: 1rem;
   font-size: 1.5rem;
   cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: darkcyan;
+  color: white;
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+button:hover {
+  background-color: #3c5be0;
+}
+
+button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #ffffff;
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }

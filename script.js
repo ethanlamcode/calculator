@@ -13,7 +13,7 @@ document.addEventListener('keydown', (event)=>{
             display.value = eval(display.value);
         }
         catch {
-            display.value = 'Error Detected';
+            display.value = 'Error';
         }
     }
     else if(k==='Backspace'){
